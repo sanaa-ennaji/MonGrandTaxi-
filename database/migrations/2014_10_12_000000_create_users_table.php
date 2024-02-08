@@ -17,9 +17,13 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->morphs('userbale');
-            $table->rememberToken();
-            $table->timestamps();
+            $table->string('phone');
+            $table->string('profile');
+            $table->string('role');
+            $table->string('description');
+            $table->string('Num_immatriculation');
+            $table->string('vehicle');
+            $table->tiestamps(' Num_immatriculation');
         });
     }
 

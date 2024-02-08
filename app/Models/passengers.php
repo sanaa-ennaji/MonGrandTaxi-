@@ -9,9 +9,5 @@ class passengers extends Model
 {
     use HasFactory;
 
-    protected $guarded= [];
-
-    public function users(){
-        return $this->morphOne(User::class , userbale);
-    }
+   
 }
