@@ -23,7 +23,8 @@ return new class extends Migration
             $table->string('description');
             $table->string('Num_immatriculation');
             $table->string('vehicle');
-            $table->tiestamps(' Num_immatriculation');
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 
